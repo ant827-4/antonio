@@ -1,0 +1,16 @@
+fun main() {
+    var clientes = 11
+    // outras operações com inteiros
+    // adição
+    clientes += 7
+    println(clientes) //equivale o clientes = clientes + 7
+    //subtração
+    clientes -= 3
+    println(clientes) // equivale a clientes = clinetes - 3
+    //multiplicação
+    clientes*= 2
+    println(clientes) //equivale o clientes = clientes + 2
+    //divisão
+    clientes /=3
+    println(clientes) // equivale a clientes = clinetes / 3
+}
