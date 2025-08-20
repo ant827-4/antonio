@@ -1,0 +1,18 @@
+
+fun main() {
+   
+    // conjunto apenas de leitura
+    val apenasleiturasFrutas = setOf("abacate","banana","cereja","cereja")
+    println(apenasleiturasFrutas)
+    
+    //contando a quantidade de intns  
+    println("Este conjunto tem ${apenasleituraFrutas.count()} items")
+    
+    // conjuto mutável com declaração de tipos explícita
+    val frutas: MutableSet<String> = mutableSetOf("manga", "laranja", "tangerina", "manga", "uva","uva")
+    println(frutas)
+    
+    //contando a quantidades de itens 
+    println("Este conjunto tem ${frutas.count()} itens")
+   
+    }
