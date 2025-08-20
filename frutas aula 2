@@ -1,0 +1,7 @@
+fun main() {
+    // criando uma lista imultável
+    val frutas = listOf("Maçã","Banana","Laranja","Manga")
+    
+    //Interando sobre o lista
+    for (fruta in frutas) {
+        println("eu gosto de $fruta")
