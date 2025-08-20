@@ -1,0 +1,9 @@
+fun main() {
+   // criando uma lista imutavél
+    val frutas = listOf ("maça", "banana","laranja","manga")
+    // Acessando elementos por indice (começar em 0)
+    println(frutas[0]) //saída: Maçã
+    println(frutas[2]) //saída: Laranja
+    
+    //obtendo o tamanho da lista 
+    println(frutas.size) //saída: 4
