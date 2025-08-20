@@ -1,0 +1,8 @@
+fun main() {
+    // criando uma lista imultável
+    val frutas = listOf("Maçã","Banana","Laranja","Manga")
+   
+    for (i in 0 until frutas.size) {
+        println("fruta #$i: ${frutas [i]}")
+    }
+   
