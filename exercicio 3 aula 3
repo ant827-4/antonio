@@ -1,0 +1,31 @@
+// Lista dos usuarios ja cadastrados 
+ val nomeUsuarioCadastrados = mutableListOf(" joao_pedro", "jane_silva")
+// Lista de emails ja cadastrados 
+val emailsCadastrados = mutableListOf("joao@exemplo.com", "jane@exemplo.com")
+
+fun registraUsuario(username: String, email: String): String { 
+    // Retorno antecipado if the usernamo ja foi usado
+    if (username in nomeUsuarioCadastrados) {
+       return "Nome de usuario ja utilizado. por favor, escolha um usename diferente."
+    }
+    
+    // Retorno antecipado if the email ja foi usado
+    if(email in emailsCadastrados) { 
+       return "Email ja utilizado. Por favor, escolha um email diferente."
+    }
+    // prossegue com o regitro se o usernae e email aimda não foram usados
+    nomeUsuarioCadastrados.add(username)
+    emailsCadastrados.add(email)
+    
+    return "Usuário registrado com sucessos: $username"
+}
+
+fun main(){
+    // tentativa de inclusão duplicada
+    println(registrarUsuario("joao_pedro"; "joao@example.com"))
+    // A função vai mostrar a que ja foi utilizado esse usernamo
+    
+    //tentativa de inclusão nova. vai fucionar
+    println(registrarUsuario("novo_usuario"),"novo@example.com"))
+    // usuário cadastrado com sucesso: novo_usúario 
+}
